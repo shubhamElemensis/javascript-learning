@@ -17,3 +17,5 @@ const wastearr = [1,2,[3,3.1,3.2,[3.31,3.32],3.4],4]
 
 const realarr = wastearr.flat(Infinity)//convert in single array
 console.log(realarr);
+
+console.log(Array.from("shubham"));//convert into array
