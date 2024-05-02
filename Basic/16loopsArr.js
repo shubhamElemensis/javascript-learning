@@ -5,6 +5,10 @@ for (const i of arr) {
     console.log(i);
 }
 
+arr.forEach((val,index)=>{
+    console.log(val,index);
+})
+
 
 //loop for string
 const str = "shubham"
