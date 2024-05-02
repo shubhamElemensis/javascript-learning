@@ -29,3 +29,10 @@ console.log(newnum);
 
 //Reduce
 
+const total = arr1.reduce((acc,currval)=>acc+currval,0)
+console.log(total);
+
+const totalage = arr.reduce((acc,user)=>{
+  return acc+user.age
+},0)
+console.log(totalage);
