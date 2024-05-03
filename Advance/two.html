@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <div class="parents">
+      <div class="children">mon</div>
+      <div class="children">tues</div>
+      <div class="children">wed</div>
+      <div class="children">thurs</div>
+      <div class="children">fri</div>
+    </div>
+  </body>
+  <script>
+    const allchild = document.querySelectorAll(".children");
+    console.log(allchild);
+    const parent = document.querySelector(".parents")
+    parent.children[2].style.color="orange"
+  </script>
+</html>
