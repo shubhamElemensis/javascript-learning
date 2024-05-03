@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CLUB</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    const randomColor = () => {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+
+      for (let i = 0; i < 6; i++) {
+ color +=hex[Math.floor(Math.random()*16)]
+      }
+      return color
+    };
+
+    let internalId;
+    const startRandom = ()=>{
+        const bgChanger = ()=>{
+            
+            document.body.style.backgroundColor=randomColor();
+        }
+       internalId = setInterval(bgChanger,100)
+    }
+    const stopRandom = ()=>{
+        clearInterval(internalId)
+    }
+    
+    const start = document.querySelector("#start").addEventListener("click",startRandom)
+    const stop = document.querySelector("#stop").addEventListener("click",stopRandom)
+    
+
+    console.log(randomColor());
+  </script>
+</html>
