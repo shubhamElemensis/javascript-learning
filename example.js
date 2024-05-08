@@ -168,11 +168,38 @@
 // console.log(findAverage(numbers5)); // Output: 30
 // console.log(findAverage(numbers6)); // Output: 30
 
-//Question 10
+// //Question 10
 
-let array3 = [1, 2, 3, 4, 5];
-let array4 = [5, 4, 3, 2, 1];
-let array5 = [1, 2, 3, 4, 6];
+// let array3 = [1, 2, 3, 4, 5];
+// let array4 = [5, 4, 3, 2, 1];
+// let array5 = [1, 2, 3, 4, 6];
 
-console.log(arraysEqual(array3, array4)); // Output: true
-console.log(arraysEqual(array3, array5)); // Output: false
+// console.log(arraysEqual(array3, array4)); // Output: true
+// console.log(arraysEqual(array3, array5)); // Output: false
+
+
+// //Question 11
+
+// let str1 = "abcdefg";
+// let str2 = "hello";
+
+// function hasUniqueCharacters(str) {
+//     return new Set(str).size == str.length;
+// }
+
+// console.log(hasUniqueCharacters(str1)); // Output: true
+// console.log(hasUniqueCharacters(str2)); // Output: false
+
+
+
+
+
+// const letters = new Set(["a","b","c"]);
+
+// // const myIterator = letters.keys();
+
+// let text = "";
+// for (const x of letters) {
+//   text += x 
+//   console.log(text);
+// }
